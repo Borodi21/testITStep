@@ -13,10 +13,18 @@ namespace testITStep
             Console.Write("Enter name: ");
             string name = Console.ReadLine();
 
+            Console.Write("Enter middle name: ");
+            string middle_name = Console.ReadLine();
+
             ConsoleColor name_color = ConsoleColor.Green;
+            ConsoleColor middle_name_color = ConsoleColor.Blue;
 
             Console.ForegroundColor = name_color;
-            Console.WriteLine(name);
+            Console.Write(name);
+
+            Console.ForegroundColor = middle_name_color;
+            Console.Write(" ");
+            Console.Write(middle_name);
 
             Console.ResetColor();
         }
